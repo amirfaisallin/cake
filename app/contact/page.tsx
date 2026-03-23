@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Clock, MessageCircle, Facebook, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, MessageCircle, Globe, Camera } from "lucide-react"
 import { SiteLayout } from "@/components/site-layout"
 import type { Metadata } from "next"
 
@@ -17,8 +17,8 @@ const contactMethods = [
 ]
 
 const socialLinks = [
-  { icon: Facebook, name: "Facebook", href: "https://facebook.com", color: "bg-[#1877F2]" },
-  { icon: Instagram, name: "Instagram", href: "https://instagram.com", color: "bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]" },
+  { icon: Globe, name: "Facebook", href: "https://facebook.com", color: "bg-[#1877F2]" },
+  { icon: Camera, name: "Instagram", href: "https://instagram.com", color: "bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]" },
   { icon: MessageCircle, name: "Messenger", href: "https://m.me/yourpage", color: "bg-[#0084FF]" },
 ]
 

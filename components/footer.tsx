@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react"
+import { Phone, Mail, MapPin, Globe, Camera, MessageCircle } from "lucide-react"
 
 const quickLinks = [
   { href: "/menu", label: "Menu" },
@@ -40,7 +40,7 @@ export function Footer() {
                 className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="Facebook"
               >
-                <Facebook className="w-3.5 h-3.5" />
+                <Globe className="w-3.5 h-3.5" />
               </a>
               <a 
                 href="https://instagram.com" 
@@ -49,7 +49,7 @@ export function Footer() {
                 className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram className="w-3.5 h-3.5" />
+                <Camera className="w-3.5 h-3.5" />
               </a>
               <a 
                 href="https://wa.me/8801700000000" 
