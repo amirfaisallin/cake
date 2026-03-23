@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "area-1",
+    "name": "Uttara",
+    "charge": 60,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.526Z",
+    "updatedAt": "2026-03-23T15:34:19.526Z"
+  },
+  {
+    "_id": "area-2",
+    "name": "Gulshan",
+    "charge": 80,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.526Z",
+    "updatedAt": "2026-03-23T15:34:19.526Z"
+  }
+]

@@ -1,0 +1,16 @@
+@import '../../app/globals.css';
+
+:root {
+  /* next/font/google on the original Next app injects these variables.
+     We set them manually so `var(--font-playfair)` / `var(--font-lora)` keep working. */
+  --font-playfair: 'Playfair Display';
+  --font-lora: 'Lora';
+}
+
+body {
+  /* Original Next layout used: body className="font-serif antialiased" */
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

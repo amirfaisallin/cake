@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "f4f1da46-0f90-4f64-8fc6-db426eba8a15",
+    "orderNumber": "TB260323998",
+    "customerName": "Test",
+    "phone": "123456",
+    "email": "",
+    "cakeType": "birthday",
+    "size": "1kg",
+    "flavor": "chocolate",
+    "deliveryDate": "2026-03-23",
+    "deliveryTime": "10:00 AM - 12:00 PM",
+    "deliveryAddress": "Test address",
+    "deliveryArea": "",
+    "deliveryCharge": 0,
+    "referenceImage": "https://res.cloudinary.com/dcmfm1d0r/image/upload/v1774276568/sweet-delights/ukwnqm8xkcc39otyqoku.jpg",
+    "specialInstructions": "",
+    "estimatedPrice": 800,
+    "status": "pending",
+    "createdAt": "2026-03-23T14:42:07.584Z",
+    "updatedAt": "2026-03-23T14:42:07.584Z"
+  }
+]

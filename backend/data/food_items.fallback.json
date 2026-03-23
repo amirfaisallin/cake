@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "seed-1",
+    "name": "Chocolate Cake",
+    "slug": "chocolate-cake",
+    "description": "Rich chocolate layers with smooth frosting.",
+    "price": 1200,
+    "image": "/images/chocolate-cake.jpg",
+    "categoryId": "cakes",
+    "categoryName": "Cakes",
+    "tags": [
+      "featured"
+    ],
+    "sizes": [],
+    "active": true,
+    "featured": false,
+    "createdAt": "2026-03-23T15:34:06.274Z",
+    "updatedAt": "2026-03-23T15:39:43.087Z"
+  },
+  {
+    "_id": "seed-2",
+    "name": "Strawberry Cake",
+    "slug": "strawberry-cake",
+    "description": "Fresh strawberry cream with soft sponge.",
+    "price": 1100,
+    "image": "/images/strawberry-cake.jpg",
+    "categoryId": "cakes",
+    "categoryName": "Cakes",
+    "tags": [],
+    "sizes": [],
+    "active": true,
+    "featured": true,
+    "createdAt": "2026-03-23T15:34:06.275Z",
+    "updatedAt": "2026-03-23T15:39:42.720Z"
+  },
+  {
+    "_id": "seed-3",
+    "name": "Vanilla Wedding Cake",
+    "slug": "vanilla-wedding-cake",
+    "description": "Classic vanilla with elegant finishing.",
+    "price": 2500,
+    "image": "/images/wedding-cake.jpg",
+    "categoryId": "wedding",
+    "categoryName": "Wedding",
+    "tags": [],
+    "sizes": [],
+    "active": true,
+    "featured": true,
+    "createdAt": "2026-03-23T15:34:06.275Z",
+    "updatedAt": "2026-03-23T15:34:06.275Z"
+  },
+  {
+    "_id": "seed-4",
+    "name": "Red Velvet Cake",
+    "slug": "red-velvet-cake",
+    "description": "Soft cocoa crumb with cream cheese notes.",
+    "price": 1300,
+    "image": "/images/red-velvet-cake.jpg",
+    "categoryId": "cakes",
+    "categoryName": "Cakes",
+    "tags": [],
+    "sizes": [],
+    "active": true,
+    "featured": false,
+    "createdAt": "2026-03-23T15:34:06.275Z",
+    "updatedAt": "2026-03-23T15:34:06.275Z"
+  }
+]

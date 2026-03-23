@@ -1,0 +1,13 @@
+@import '../../app/globals.css';
+
+:root {
+  --font-playfair: 'Playfair Display';
+  --font-lora: 'Lora';
+}
+
+body {
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "9eb2e03e-c828-47bc-b0fb-c7646826ae08",
+    "name": "test",
+    "slug": "test",
+    "description": "",
+    "active": true,
+    "order": 3,
+    "createdAt": "2026-03-23T15:37:25.712Z",
+    "updatedAt": "2026-03-23T15:37:25.712Z"
+  },
+  {
+    "_id": "cakes",
+    "name": "Cakes",
+    "slug": "cakes",
+    "description": "",
+    "active": true,
+    "order": 1,
+    "createdAt": "2026-03-23T15:34:06.309Z",
+    "updatedAt": "2026-03-23T15:34:06.309Z"
+  },
+  {
+    "_id": "wedding",
+    "name": "Wedding",
+    "slug": "wedding",
+    "description": "",
+    "active": true,
+    "order": 2,
+    "createdAt": "2026-03-23T15:34:06.309Z",
+    "updatedAt": "2026-03-23T15:34:06.309Z"
+  }
+]

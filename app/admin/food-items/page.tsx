@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -36,6 +36,8 @@ export default function FoodItemsPage() {
   const [categories, setCategories] = useState<Category[]>([])
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
+  const [uploading, setUploading] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [tagInput, setTagInput] = useState('')
   const [newSize, setNewSize] = useState({ name: '', price: '' })
   
@@ -108,6 +110,26 @@ export default function FoodItemsPage() {
       console.error('Failed to save:', error)
     } finally {
       setSaving(false)
+    }
+  }
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setUploading(true)
+    try {
+      const fd = new FormData()
+      fd.append('file', file)
+      const res = await fetch('/api/upload', { method: 'POST', body: fd })
+      const data = await res.json()
+      if (data?.url) {
+        setForm({ ...form, image: data.url })
+      }
+    } catch (error) {
+      console.error('Upload error:', error)
+    } finally {
+      setUploading(false)
+      if (fileInputRef.current) fileInputRef.current.value = ''
     }
   }
 
@@ -223,15 +245,41 @@ export default function FoodItemsPage() {
                 <Input
                   value={form.image}
                   onChange={(e) => setForm({ ...form, image: e.target.value })}
-                  placeholder="Image URL"
+                  placeholder="Image URL (Cloudinary URL)"
                   className="text-xs h-8"
                 />
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
+                  className="hidden"
+                />
               </div>
-              {form.image && (
-                <div className="relative w-16 h-16 rounded-lg overflow-hidden border shrink-0">
-                  <Image src={form.image} alt="Preview" fill className="object-cover" />
-                </div>
-              )}
+
+              <div className="flex flex-col items-end gap-2 shrink-0">
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={uploading}
+                  className="h-8 text-[10px] md:text-xs"
+                >
+                  {uploading ? (
+                    <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  ) : (
+                    <Upload className="w-3.5 h-3.5" />
+                  )}
+                  <span className="ml-2">{uploading ? 'Uploading' : 'Upload'}</span>
+                </Button>
+
+                {form.image && (
+                  <div className="relative w-16 h-16 rounded-lg overflow-hidden border">
+                    <Image src={form.image} alt="Preview" fill className="object-cover" />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 

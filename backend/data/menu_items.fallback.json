@@ -1,0 +1,137 @@
+[
+  {
+    "_id": "m-birthday",
+    "type": "cake_type",
+    "name": "birthday",
+    "label": "Birthday",
+    "price": 800,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.512Z",
+    "updatedAt": "2026-03-23T15:34:19.512Z"
+  },
+  {
+    "_id": "m-wedding",
+    "type": "cake_type",
+    "name": "wedding",
+    "label": "Wedding",
+    "price": 2500,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.512Z",
+    "updatedAt": "2026-03-23T15:34:19.512Z"
+  },
+  {
+    "_id": "m-anniversary",
+    "type": "cake_type",
+    "name": "anniversary",
+    "label": "Anniversary",
+    "price": 1200,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.512Z",
+    "updatedAt": "2026-03-23T15:34:19.512Z"
+  },
+  {
+    "_id": "m-custom",
+    "type": "cake_type",
+    "name": "custom",
+    "label": "Custom",
+    "price": 1000,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.512Z",
+    "updatedAt": "2026-03-23T15:34:19.512Z"
+  },
+  {
+    "_id": "m-0.5kg",
+    "type": "size",
+    "name": "0.5kg",
+    "label": "0.5 kg",
+    "multiplier": 0.6,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.512Z",
+    "updatedAt": "2026-03-23T15:34:19.512Z"
+  },
+  {
+    "_id": "m-1kg",
+    "type": "size",
+    "name": "1kg",
+    "label": "1 kg",
+    "multiplier": 1,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-1.5kg",
+    "type": "size",
+    "name": "1.5kg",
+    "label": "1.5 kg",
+    "multiplier": 1.4,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-2kg",
+    "type": "size",
+    "name": "2kg",
+    "label": "2 kg",
+    "multiplier": 1.8,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-3kg",
+    "type": "size",
+    "name": "3kg",
+    "label": "3 kg+",
+    "multiplier": 2.5,
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-chocolate",
+    "type": "flavor",
+    "name": "chocolate",
+    "label": "Chocolate",
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-vanilla",
+    "type": "flavor",
+    "name": "vanilla",
+    "label": "Vanilla",
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-red-velvet",
+    "type": "flavor",
+    "name": "red-velvet",
+    "label": "Red Velvet",
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-strawberry",
+    "type": "flavor",
+    "name": "strawberry",
+    "label": "Strawberry",
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  },
+  {
+    "_id": "m-butterscotch",
+    "type": "flavor",
+    "name": "butterscotch",
+    "label": "Butterscotch",
+    "active": true,
+    "createdAt": "2026-03-23T15:34:19.513Z",
+    "updatedAt": "2026-03-23T15:34:19.513Z"
+  }
+]

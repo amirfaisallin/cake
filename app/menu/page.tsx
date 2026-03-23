@@ -69,7 +69,8 @@ export default function MenuPage() {
         {/* Categories */}
         <section className="py-2.5 md:py-4 border-b border-border sticky top-12 md:top-16 bg-background/95 backdrop-blur-sm z-20">
           <div className="container mx-auto">
-            <div className="flex gap-2 overflow-x-auto px-4 pb-1 scrollbar-hide scroll-smooth" style={{ scrollPaddingLeft: '16px' }}>
+            {/* Mobile: adjust left/right padding so the first chip is always visible */}
+            <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide scroll-smooth pl-2 pr-4 md:pl-4 md:pr-4">
               <button
                 onClick={() => setActiveCategory('all')}
                 className={`px-3 py-1.5 rounded-full text-[10px] md:text-xs font-serif whitespace-nowrap transition-colors shrink-0 ${
@@ -133,17 +134,18 @@ export default function MenuPage() {
                         </span>
                       )}
                     </div>
-                    <div className="p-2 md:p-3">
+                    <div className="p-2.5 md:p-3">
                       <h3 className="font-sans text-[11px] md:text-sm font-semibold text-foreground leading-tight line-clamp-1">{item.name}</h3>
                       {item.description && (
                         <p className="text-muted-foreground text-[9px] md:text-xs mt-0.5 line-clamp-1">{item.description}</p>
                       )}
-                      <div className="flex flex-col gap-1.5 mt-2">
+                      {/* Mobile: increase spacing between price & button */}
+                      <div className="flex flex-col gap-2 mt-2.5">
                         <span className="text-primary font-bold text-sm md:text-base">৳{item.price}</span>
                         <Button 
                           asChild 
                           size="sm" 
-                          className="w-full h-7 md:h-8 text-[10px] md:text-xs rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                          className="w-full h-8 md:h-8 text-[10px] md:text-xs rounded-full bg-primary hover:bg-primary/90 text-primary-foreground"
                         >
                           <Link href="/order">Order Now</Link>
                         </Button>
