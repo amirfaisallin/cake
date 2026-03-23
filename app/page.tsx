@@ -35,13 +35,15 @@ export default function HomePage() {
 
   useEffect(() => {
     const fetchData = async () => {
+      const controller = new AbortController()
+      const timeout = setTimeout(() => controller.abort(), 10000)
       try {
         const [foodRes, settingsRes] = await Promise.all([
-          fetch('/api/food?featured=true'),
-          fetch('/api/settings')
+          fetch('/api/food?featured=true', { signal: controller.signal }),
+          fetch('/api/settings', { signal: controller.signal })
         ])
-        const foodData = await foodRes.json()
-        const settingsData = await settingsRes.json()
+        const foodData = foodRes.ok ? await foodRes.json() : { items: [] }
+        const settingsData = settingsRes.ok ? await settingsRes.json() : { settings: {} }
         
         setFeaturedItems(foodData.items?.slice(0, 4) || [])
         if (settingsData.settings?.hero_image) {
@@ -50,6 +52,7 @@ export default function HomePage() {
       } catch (error) {
         console.error('Failed to fetch:', error)
       } finally {
+        clearTimeout(timeout)
         setLoading(false)
       }
     }

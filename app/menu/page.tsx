@@ -36,14 +36,17 @@ export default function MenuPage() {
   }, [])
 
   const fetchData = async () => {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 10000)
     try {
-      const res = await fetch('/api/food')
-      const data = await res.json()
+      const res = await fetch('/api/food', { signal: controller.signal })
+      const data = res.ok ? await res.json() : { items: [], categories: [] }
       setItems(data.items || [])
       setCategories(data.categories || [])
     } catch (error) {
       console.error('Failed to fetch:', error)
     } finally {
+      clearTimeout(timeout)
       setLoading(false)
     }
   }

@@ -76,9 +76,11 @@ export default function OrderPage() {
 
   useEffect(() => {
     const fetchMenuData = async () => {
+      const controller = new AbortController()
+      const timeout = setTimeout(() => controller.abort(), 10000)
       try {
-        const response = await fetch('/api/menu')
-        const data = await response.json()
+        const response = await fetch('/api/menu', { signal: controller.signal })
+        const data = response.ok ? await response.json() : { success: false }
         if (data.success) {
           if (data.cakeTypes?.length) setCakeTypes(data.cakeTypes)
           if (data.sizes?.length) setSizes(data.sizes)
@@ -88,6 +90,7 @@ export default function OrderPage() {
       } catch (error) {
         console.error('Failed to fetch menu data:', error)
       } finally {
+        clearTimeout(timeout)
         setMenuLoading(false)
       }
     }
