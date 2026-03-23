@@ -4,6 +4,10 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    // Avoid noisy lightningcss warnings for Tailwind v4 directives on Vercel.
+    cssMinify: 'esbuild',
+  },
   publicDir: path.resolve(__dirname, '..', 'public'),
   resolve: {
     dedupe: ['react', 'react-dom'],
