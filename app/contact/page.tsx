@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 }
 
 const contactMethods = [
-  { icon: Phone, title: "Phone", value: "+880 1700-000-000", href: "tel:+8801700000000", color: "text-primary" },
-  { icon: MessageCircle, title: "WhatsApp", value: "+880 1700-000-000", href: "https://wa.me/8801700000000", color: "text-[#25D366]" },
+  { icon: Phone, title: "Phone", value: "01738205144", href: "tel:01738205144", color: "text-primary" },
+  { icon: MessageCircle, title: "WhatsApp", value: "01738205144", href: "https://wa.me/8801738205144", color: "text-[#25D366]" },
   { icon: Mail, title: "Email", value: "hello@sweetdelights.com", href: "mailto:hello@sweetdelights.com", color: "text-primary" },
 ]
 
 const socialLinks = [
-  { icon: Globe, name: "Facebook", href: "https://facebook.com", color: "bg-[#1877F2]" },
-  { icon: Camera, name: "Instagram", href: "https://instagram.com", color: "bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]" },
-  { icon: MessageCircle, name: "Messenger", href: "https://m.me/yourpage", color: "bg-[#0084FF]" },
+  { icon: Globe, name: "Facebook", href: "https://www.facebook.com/thecakecell", color: "bg-[#1877F2]" },
+  { icon: Camera, name: "Instagram", href: "https://www.facebook.com/thecakecell", color: "bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]" },
+  { icon: MessageCircle, name: "Messenger", href: "https://www.facebook.com/thecakecell", color: "bg-[#0084FF]" },
 ]
 
 export default function ContactPage() {
@@ -61,8 +61,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-sans text-sm font-medium text-foreground mb-1">Our Location</h3>
                 <p className="text-muted-foreground text-xs font-serif">
-                  Gulshan-2, Dhaka 1212<br />
-                  Bangladesh
+                  Opposite Keramat Ullah Market,<br />
+                  Ulipur Moddho Bazar, Ulipur.
                 </p>
               </div>
             </div>

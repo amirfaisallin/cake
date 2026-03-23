@@ -242,7 +242,7 @@ export default function TrackOrderPage() {
                     </div>
                     <Button 
                       size="sm"
-                      onClick={() => window.open(`https://wa.me/8801700000000?text=Hi! I have a question about my order ${order.orderNumber}`, '_blank')}
+                      onClick={() => window.open(`https://wa.me/8801738205144?text=Hi! I have a question about my order ${order.orderNumber}`, '_blank')}
                       className="bg-[#25D366] hover:bg-[#25D366]/90 text-white text-xs"
                     >
                       <Phone className="w-3 h-3 mr-1" />

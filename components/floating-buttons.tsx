@@ -6,7 +6,7 @@ export function FloatingButtons() {
   return (
     <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-2">
       <a
-        href="https://web.facebook.com/thecakecell/"
+        href="https://www.facebook.com/thecakecell"
         target="_blank"
         rel="noopener noreferrer"
         className="w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-[#0084FF] text-white shadow-md hover:scale-105 transition-transform"

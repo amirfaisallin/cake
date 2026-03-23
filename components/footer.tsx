@@ -34,7 +34,7 @@ export function Footer() {
             </p>
             <div className="flex gap-2">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/thecakecell" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -43,7 +43,7 @@ export function Footer() {
                 <Globe className="w-3.5 h-3.5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.facebook.com/thecakecell" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -52,7 +52,7 @@ export function Footer() {
                 <Camera className="w-3.5 h-3.5" />
               </a>
               <a 
-                href="https://wa.me/8801700000000" 
+                href="https://wa.me/8801738205144" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -100,7 +100,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <Phone className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                <p className="text-background/70 font-serif text-xs">+880 1700-000-000</p>
+                <p className="text-background/70 font-serif text-xs">01738205144</p>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
@@ -108,7 +108,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                <p className="text-background/70 font-serif text-xs">Gulshan-2, Dhaka</p>
+                <p className="text-background/70 font-serif text-xs">Opposite Keramat Ullah Market, Ulipur Moddho Bazar, Ulipur.</p>
               </li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 py-4">
           <p className="text-background/50 font-serif text-xs text-center">
-            © {new Date().getFullYear()} Tiny Bites by Ruthbah. Made with love in Bangladesh.
+            © {new Date().getFullYear()} Tiny Bites by Ruthbah. Made with love in Ulipur.
           </p>
         </div>
       </div>
